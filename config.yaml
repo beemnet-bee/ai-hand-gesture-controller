@@ -1,0 +1,21 @@
+# GestureOS Configuration Profile
+camera:
+  device_index: 0
+  resolution: [1280, 720]
+  fps: 60
+  mirror: true
+
+smoothing:
+  ema_alpha: 0.28          # 0.1 (maximum smoothness) to 0.8 (maximum responsiveness)
+  deadband_pixels: 4.0     # Minimum displacement to trigger mouse move
+
+gestures:
+  pinch_click_threshold: 0.28   # Normalized distance to register click
+  drag_hold_seconds: 0.35      # Delay before pinch switches to drag
+  scroll_sensitivity: 1.8      # Scroll multiplier
+  volume_step_percent: 5       # Percentage change per volume gesture
+
+display:
+  draw_landmarks: true
+  draw_bounding_box: true
+  hud_font_scale: 0.7
